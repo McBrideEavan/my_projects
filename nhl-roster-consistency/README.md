@@ -14,10 +14,11 @@ This project aims to explore that hypothesis by measuring **roster consistency**
 ## 📝 **Project Structure**
 |-- data/ # Raw and processed data files
 |-- notebooks/ # Jupyter Notebooks for step-by-step analysis
-|-- src/ # Core Python scripts
-| |-- data_collection.py # Script to collect game and roster data
-| |-- analysis.py # Script to calculate consistency metrics
-| |-- visualization.py # Script to generate plots and analytics
+src/ # Core Python Scripts
+├── data_collection.py       # API Calls & Data Fetching
+├── data_processing.py       # Data Cleaning & Feature Engineering (New File)
+├── analysis.py              # EDA & Hypothesis Testing
+└── test_data_collection.py  # Tests for data collection and processing
 |-- README.md # Project documentation (you are reading this!)
 |-- requirements.txt # List of dependencies
 |-- main.py # Main execution script
@@ -25,8 +26,7 @@ This project aims to explore that hypothesis by measuring **roster consistency**
 ---
 
 ## ⚙️ **Setup Instructions**
-1. **Clone the repository:**  
-   ```bash
+1. **Clone the repository:**
    git clone https://github.com/McBrideEavan/nhl-roster-consistency.git
    cd nhl-roster-consistency
 2. **Install Dependencies:**
